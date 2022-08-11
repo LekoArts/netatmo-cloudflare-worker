@@ -1,0 +1,28 @@
+{
+  "name": "netatmo-api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "formdata-node": "^4.3.3",
+    "ky": "^0.31.1",
+    "ky-universal": "^0.10.1"
+  },
+  "scripts": {
+    "cli": "ts-node cli.ts",
+    "wrangler": "wrangler dev src/cloudflare-worker.ts",
+    "format": "prettier --write . --ignore-path .gitignore --no-semi --trailing-comma es5 --print-width 120"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
+    "@swc/core": "^1.2.224",
+    "@swc/helpers": "^0.4.3",
+    "@types/node": "^18.7.1",
+    "prettier": "^2.7.1",
+    "regenerator-runtime": "^0.13.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "wrangler": "2.0.25"
+  }
+}
