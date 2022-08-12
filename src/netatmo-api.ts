@@ -155,6 +155,7 @@ export const massageOutput = (input: Station[]) => {
     const rainModule = station.modules.find((m) => m.type === "NAModule3")
 
     return {
+      _id: station._id,
       station_name: station.station_name,
       last_status_store: station.last_status_store,
       place: station.place,

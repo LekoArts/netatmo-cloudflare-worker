@@ -11,7 +11,8 @@
   },
   "scripts": {
     "cli": "ts-node cli.ts",
-    "wrangler": "wrangler dev src/cloudflare-worker.ts",
+    "wrangler:dev": "wrangler dev src/cloudflare-worker.ts",
+    "wrangler:publish": "wrangler publish src/cloudflare-worker.ts --name netatmo-fav",
     "format": "prettier --write . --ignore-path .gitignore --no-semi --trailing-comma es5 --print-width 120"
   },
   "devDependencies": {
